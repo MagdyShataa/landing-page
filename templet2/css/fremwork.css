@@ -1,0 +1,1268 @@
+ html {
+
+     background-color: hsl(0, 0%, 100%);
+     scroll-behavior: smooth;
+     font-size: 100%;
+     box-sizing: inherit;
+     scroll-behavior: smooth;
+     height: -webkit-fill-available;
+
+ }
+
+ * {
+
+     box-sizing: border-box;
+ }
+
+
+
+ body {
+     scroll-behavior: smooth;
+     margin: 0px;
+     transition: all 2s linear;
+     -webkit-transition: all 2s linear;
+     -moz-transition: all 2s linear;
+     -ms-transition: all 2s linear;
+     -o-transition: all 2s linear;
+ }
+
+
+
+
+
+
+ .topnav {
+     overflow: hidden;
+     list-style: none;
+     padding: .5% 2%;
+     background-color: transparent;
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     backdrop-filter: blur(0px);
+     margin-top: 0;
+     z-index: 100;
+
+     border-bottom: #e30909 solid 2px;
+ }
+
+ .topnav text {
+     float: left;
+     display: block;
+     color: #f48b13;
+     text-align: center;
+     padding: 1px 16px;
+     text-decoration: none;
+     font-weight: bolder;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .topnav a {
+     float: right;
+     display: block;
+     color: #f15907;
+     text-align: center;
+     text-align: center;
+     padding: 15px 20px 20px 16px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: all 1s linear;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     -webkit-transition: all 1s linear;
+     -moz-transition: all 1s linear;
+     -ms-transition: all 1s linear;
+     -o-transition: all 1s linear;
+ }
+
+ .topnav a:hover {
+     background-color: transparent;
+     color: rgb(1, 1, 161);
+ }
+
+
+
+ .topnav .icon {
+     display: none;
+ }
+
+ @media screen and (min-width: 500px) and (max-width: 768px) {
+     .topnav {
+         overflow: hidden;
+         list-style: none;
+         padding: .5% .1%;
+
+     }
+
+     .topnav a {
+         letter-spacing: -1px;
+         padding: 15px 10px 20px 5px;
+         text-decoration: none;
+
+     }
+ }
+
+ @media screen and (max-width: 600px) {
+     .topnav a {
+         display: none;
+     }
+
+     .topnav a.icon {
+         float: right;
+         display: block;
+     }
+ }
+
+ @media screen and (max-width: 600px) {
+     .topnav {
+
+         background-color: rgb(8, 30, 78);
+         margin-bottom: 0;
+     }
+
+     .topnav.responsive {
+         position: relative;
+         transition: all 5s linear;
+         -webkit-transition: all 5s linear;
+         -moz-transition: all 5s linear;
+         -ms-transition: all 5s linear;
+         -o-transition: all 5s linear;
+     }
+
+     .topnav.responsive .icon {
+         position: absolute;
+         right: 0;
+         top: 0;
+     }
+
+     .topnav.responsive text {
+         float: none;
+         display: block;
+         text-align: left;
+     }
+
+     .topnav.responsive a {
+         float: none;
+         display: block;
+         text-align: left;
+
+     }
+
+ }
+
+ header {
+     background-image: url(../img/istockphoto-616902766-612x612.jpg   );
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-clip: border-box;
+     aspect-ratio: 1/1;
+     object-fit: cover;
+     position: relative;
+
+ }
+
+
+ header .waves-tow {
+     position: absolute;
+     bottom: -2%;
+     left: 0;
+     right: 0;
+ }
+
+ header .waves-one {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+ }
+
+ header .waves {
+     position: absolute;
+     bottom: -3%;
+     left: 0;
+     right: 0;
+ }
+
+
+
+ article {
+     margin-top: 12%;
+     margin-left: 2%;
+     margin-right: 2%;
+     padding: 2%;
+
+ }
+
+ article h1 {
+
+
+     text-decoration: underline;
+     color: rgb(245, 84, 84);
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+
+ article p {
+
+     color: #f9f9f9;
+     margin-bottom: 3%;
+     font-family: "Lucida Console", "Courier New", monospace;
+     white-space: normal;
+     text-align: justify;
+     text-justify: inter-word;
+     font-weight: bold;
+     background-color: rgba(255, 255, 255, 0.09);
+     backdrop-filter: blur(30px);
+     padding: 2%;
+     line-height: 25px;
+     font-weight: bolder;
+     letter-spacing: -.5px;
+ }
+
+ article .button {
+     position: relative;
+     background-color: rgba(130, 128, 127, 0.24);
+     backdrop-filter: blur(6px);
+
+     border: 2px solid #ffffff;
+     border-radius: 10px;
+     margin-bottom: 2%;
+     font-weight: bolder;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: #1470f1;
+     padding: 20px;
+     width: 200px;
+     text-align: center;
+     transition-duration: 0.4s;
+     text-decoration: none;
+     overflow: hidden;
+     cursor: pointer;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     font-size: 18px;
+     transition: all 0.8s linear;
+     -webkit-transition: all 0.8s linear;
+     -moz-transition: all 0.8s linear;
+     -ms-transition: all 0.8s linear;
+     -o-transition: all 0.8s linear;
+ }
+
+ article .button:after {
+     content: "";
+     background: #f1f1f1;
+     display: block;
+     position: absolute;
+     padding-top: 300%;
+     padding-left: 350%;
+     margin-left: -20px !important;
+     margin-top: -120%;
+     opacity: 0;
+
+ }
+
+ article .button:active:after {
+     padding: 0;
+     margin: 0;
+     opacity: 1;
+     transition: 0s
+ }
+
+ article .button {
+     box-shadow: 0 8px 16px 0 rgba(86, 139, 223, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ article .button:hover {
+     box-shadow: 0 20px 16px 0 rgba(42, 91, 238, 0.24), 0 20px 50px 0 rgba(0, 0, 0, 0.19);
+ }
+
+
+ article .button a {
+     color: #ffffff;
+ }
+
+ address,
+ blockquote {
+     display: block;
+     margin-top: 1em;
+     margin-bottom: 1em;
+     margin-left: 40px;
+     margin-right: 40px;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ address {
+     color: rgba(239, 90, 27);
+ }
+
+ blockquote {
+     color: #595959;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ form {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     margin-left: 3%;
+     margin-right: 3%;
+     place-items: center;
+     gap: 2%;
+     align-items: center;
+     justify-content: center;
+     opacity: 0;
+     transform: translateY(50px);
+     -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+     -ms-transform: translateY(50px);
+     -o-transform: translateY(50px);
+     transition: all 2s linear;
+     -webkit-transition: all 2s linear;
+     -moz-transition: all 2s linear;
+     -ms-transition: all 2s linear;
+     -o-transition: all 2s linear;
+ }
+
+ .show {
+     opacity: 1;
+     transform: unset;
+     -webkit-transform: unset;
+     -moz-transform: unset;
+     -ms-transform: unset;
+     -o-transform: unset;
+ }
+
+
+
+
+ @media screen and (min-width: 600px) and (max-width: 768px) {
+     form {
+         display: grid;
+         grid-template-columns: auto;
+         margin-left: 3%;
+         margin-right: 3%;
+         place-items: center;
+         row-gap: 2%;
+     }
+
+     form fieldset {
+         font-weight: bold;
+         color: #595959;
+         height: 500px;
+         text-align: center;
+         border-radius: 20px;
+         -webkit-border-radius: 20px;
+         -moz-border-radius: 20px;
+         -ms-border-radius: 20px;
+         -o-border-radius: 20px;
+         background-color: #ffffff;
+     }
+ }
+
+ form fieldset {
+     font-weight: bold;
+     color: #595959;
+     height: 650px;
+     text-align: center;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+     background-color: #ffffff;
+ }
+
+ @media screen and (min-width: 600px) and (max-width: 768px) {
+
+
+     form fieldset {
+         font-weight: bold;
+         color: #595959;
+         height: 560px;
+         text-align: center;
+         border-radius: 20px;
+         -webkit-border-radius: 20px;
+         -moz-border-radius: 20px;
+         -ms-border-radius: 20px;
+         -o-border-radius: 20px;
+         background-color: #ffffff;
+     }
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 599px) {
+     form {
+         display: grid;
+         grid-template-columns: auto;
+         margin-left: 3%;
+         margin-right: 3%;
+         place-items: center;
+         gap: 2%;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 2%;
+     }
+
+     form fieldset {
+         font-weight: bold;
+         color: #595959;
+         height: 660px;
+         text-align: center;
+         border-radius: 20px;
+         -webkit-border-radius: 20px;
+         -moz-border-radius: 20px;
+         -ms-border-radius: 20px;
+         -o-border-radius: 20px;
+         background-color: #ffffff;
+     }
+ }
+
+ form fieldset h2 {
+     font-weight: bold;
+     color: #787878;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     text-align: center;
+
+     background-color: #ffffff;
+ }
+
+ form fieldset legend {
+
+     color: #f64e06;
+     font-weight: bolder;
+     font-family: cursive;
+
+ }
+
+ form fieldset img {
+     max-width: 100%;
+     height: 400px;
+     background-color: #fbfbfb;
+     text-align: center;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+ }
+
+ form fieldset figcaption {
+     color: #333333;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: bold;
+     background-color: #fbfbfb;
+     text-align: center;
+
+ }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #WHYUS {
+     background-color: #ffffff;
+     display: grid;
+     grid-template-columns: auto auto;
+     place-items: center;
+     align-items: center;
+     justify-content: center;
+     border: rgba(231, 96, 5, 0.90) solid 3px;
+     margin-left: 2%;
+     margin-right: 2%;
+
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 768px) {
+     #WHYUS {
+         background-color: #ffffff;
+         display: grid;
+         grid-template-columns: auto;
+         place-items: center;
+         align-items: center;
+         justify-content: center;
+     }
+
+ }
+
+ #WHYUS img {
+     aspect-ratio: 1/1;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     text-align: center;
+     -o-border-radius: 10px;
+     height: 500px;
+     max-width: 400px;
+     padding: 5% 2% 5% 10%;
+     margin-top: 0;
+ }
+
+
+
+ @media screen and (min-width: 600px) and (max-width: 768px) {
+     #WHYUS img {
+         margin-left: 0;
+         text-align: center;
+     }
+
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 599px) {
+     #WHYUS img {
+         margin: 0;
+         text-align: center;
+         max-width: 300px;
+
+     }
+
+ }
+
+ #WHYUS blockquote {
+     text-align: start;
+
+     transform: translateX(30px);
+     -webkit-transform: translateX(30px);
+     -moz-transform: translateX(30px);
+     -ms-transform: translateX(30px);
+     -o-transform: translateX(30px);
+     transition: all 2s linear;
+     -webkit-transition: all 2s linear;
+     -moz-transition: all 2s linear;
+     -ms-transition: all 2s linear;
+     -o-transition: all 2s linear;
+ }
+
+ .show #WHYUS blockquote {
+     opacity: 1;
+     transform: unset;
+     -webkit-transform: unset;
+     -moz-transform: unset;
+     -ms-transform: unset;
+     -o-transform: unset;
+ }
+
+ #WHYUS blockquote h1 {
+     text-align: center;
+     color: #ff3705;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ #WHYUS blockquote .btn {
+     background-color: rgb(255, 75, 30);
+     border: 2px solid rgb(190, 188, 186);
+     color: white;
+     padding: 20px 50px;
+     border-radius: 10px;
+     font-size: 16px;
+     cursor: pointer;
+     font-weight: bold;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+ }
+
+
+
+ #WHYUS blockquote .btn:hover {
+     background-color: rgb(246, 21, 17);
+ }
+
+ #card {
+     background-color: #ffffff;
+     display: grid;
+
+     backdrop-filter: blur(5px);
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     place-items: center;
+     align-items: center;
+     gap: 1%;
+     justify-content: space-around;
+     opacity: 1;
+     transform: translateY(50px);
+     -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+     -ms-transform: translateY(50px);
+     -o-transform: translateY(50px);
+     transition: all 2s linear;
+     -webkit-transition: all 2s linear;
+     -moz-transition: all 2s linear;
+     -ms-transition: all 2s linear;
+     -o-transition: all 2s linear;
+
+ }
+
+ #card {
+     background-color: #ffffff;
+     display: grid;
+
+     backdrop-filter: blur(5px);
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     place-items: center;
+     align-items: center;
+     gap: 1%;
+     justify-content: space-around;
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #card article {
+     text-align: center;
+     background-color: #f16e4e;
+     border-radius: 20px;
+     filter: drop-shadow(8px 8px 10px rgb(193, 193, 193));
+     margin-left: 5%;
+     margin-right: 5%;
+     object-fit: cover;
+     height: 300px;
+     width: 250px;
+     padding-top: 15%;
+     padding-bottom: 10%;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+     color: #f1f1f1;
+ }
+
+ #card article i {
+     color: #000000;
+
+ }
+
+ @media screen and (min-width: 600px) and (max-width: 768px) {
+     #card {
+         background-color: #ffffff;
+         display: grid;
+
+         width: 90%;
+         margin: auto;
+
+         grid-template-columns: 1fr 1fr;
+         gap: 10px;
+         align-items: center;
+
+
+
+
+     }
+
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 599px) {
+     #card {
+         background-color: #ffffff;
+         display: grid;
+         grid-template-columns: 1fr;
+         row-gap: 2%;
+
+         place-items: center;
+         align-items: center;
+         justify-content: space-around;
+     }
+ }
+
+
+ #card article h1 {
+
+     font-weight: bolder;
+     font-size: x-large;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+
+ .OURPORTFOLIO {
+     margin-top: 0%;
+     padding-top: 0%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     align-items: center;
+     justify-content: space-around;
+     gap: .1%;
+     place-items: center;
+ }
+
+ @media screen and (min-width: 600px) and (max-width: 768px) {
+     .OURPORTFOLIO {
+
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         place-items: center;
+         gap: 1%;
+     }
+
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 599px) {
+     .OURPORTFOLIO {
+
+         display: grid;
+         grid-template-columns: 1fr;
+         place-items: center;
+         gap: 1%;
+     }
+ }
+
+ .OURPORTFOLIO figure {
+     border: #787878 .2px solid;
+     border-radius: 10px;
+     margin: 5%;
+     padding-top: 6%;
+     padding-bottom: 4%;
+     text-align: center;
+     background-color: #ffffff;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     color: rgb(255, 82, 8);
+ }
+
+ .OURPORTFOLIO figure img {
+     text-align: center;
+     height: 300px;
+     width: 250px;
+ }
+
+ .OURPORTFOLIO figure h3 {
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ .OURPORTFOLIO figure p {
+     color: #ffffff;
+     text-align: center;
+     font-weight: bold;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ #OURCLIENTS {
+     margin-top: 1%;
+     margin-left: 0;
+     margin-right: 0;
+     padding-top: 10%;
+     display: grid;
+     grid-template-columns: auto;
+     place-items: start;
+     background-color: #ffffff;
+     align-items: start;
+     text-align: start;
+     filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));
+ }
+
+ #OURCLIENTS blockquote {
+     display: block;
+     text-align: start;
+     color: #4e4e4e;
+     margin-top: 1em;
+     margin-bottom: 1em;
+     margin-left: 40px;
+     margin-right: 40px;
+     font-weight: bolder;
+     align-items: start;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+
+ #OURCLIENTS h1 {
+     display: block;
+     text-align: start;
+     color: #0c0c0c;
+ }
+
+ #OURCLIENTS p {
+     display: block;
+     text-align: start;
+     color: #eb6a32;
+     margin: 0;
+     padding: 0;
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 768px) {
+     #OURCLIENTS {
+         background-color: rgb(255, 255, 255);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         margin-left: 0;
+         margin-right: 0;
+         filter: none;
+         -webkit-filter: none;
+     }
+
+     #OURCLIENTS blockquote {
+
+         text-align: start;
+         color: #4e4e4e;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 0;
+         margin-right: 0;
+
+         font-weight: bolder;
+
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+
+     #OURCLIENTS h1 {
+         display: block;
+         text-align: center;
+         color: #ee5821;
+     }
+
+     #OURCLIENTS p {
+         display: block;
+         text-align: center;
+         color: #eb6a32;
+         margin: 0;
+         padding: 0;
+     }
+ }
+
+
+ #OURCLIENTS .OURCLIENTS {
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 768px) {
+     #OURCLIENTS .OURCLIENTS {
+         background-color: rgb(255, 255, 255);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+     }
+
+     #OURCLIENTS .OURCLIENTS img {
+         background-color: rgb(255, 255, 255);
+         height: 335px;
+         width: 400px;
+
+         border-radius: 2px;
+         -webkit-border-radius: 2px;
+         -moz-border-radius: 2px;
+         -ms-border-radius: 2px;
+         -o-border-radius: 2px;
+     }
+ }
+
+
+ @media screen and (min-width: 300px) and (max-width: 768px) {}
+
+
+ #OURCLIENTS .OURCLIENTS img {
+     background-color: rgb(255, 255, 255);
+     height: 335px;
+     width: 400px;
+     filter: drop-shadow(8px 8px 10px rgb(197, 197, 197));
+     border-radius: 2px;
+     -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+     -ms-border-radius: 2px;
+     -o-border-radius: 2px;
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 768px) {
+
+
+     #OURCLIENTS .OURCLIENTS img {
+         background-color: rgb(255, 255, 255);
+         height: 335px;
+         width: 400px;
+         text-align: center;
+         border-radius: 20px;
+         -webkit-border-radius: 20px;
+         -moz-border-radius: 20px;
+         -ms-border-radius: 20px;
+         -o-border-radius: 20px;
+     }
+ }
+
+ #OURCLIENTS .OURCLIENTS ul {
+     text-align: right;
+
+     border-radius: 4px;
+     background-color: #f5f5f5;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+ }
+
+ #OURCLIENTS .OURCLIENTS ul i {
+     color: #f6b623;
+     margin-top: 1%;
+     margin-bottom: 3%;
+     margin-right: 2%;
+
+
+ }
+
+ #OURCLIENTS .OURCLIENTS ul p {
+     color: #000000;
+     margin-top: 1%;
+     margin-bottom: 3%;
+     margin-right: 2%;
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 768px) {
+
+
+     #OURCLIENTS .OURCLIENTS ul {
+         background-color: rgb(255, 255, 255);
+
+         text-align: center;
+         margin-right: 0;
+         margin-left: 0;
+
+     }
+
+     #OURCLIENTS .OURCLIENTS ul blockquote {
+         background-color: rgb(255, 255, 255);
+
+         text-align: start;
+         margin-right: 0;
+         margin-left: 0;
+
+     }
+
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 500px) {
+
+
+
+
+     #OURCLIENTS .OURCLIENTS img {
+         background-color: rgb(255, 255, 255);
+         height: 315px;
+         width: 310px;
+         text-align: center;
+         border-radius: 20px;
+         -webkit-border-radius: 20px;
+         -moz-border-radius: 20px;
+         -ms-border-radius: 20px;
+         -o-border-radius: 20px;
+     }
+ }
+
+ #ContactForm {
+     background-color: rgb(255, 255, 255);
+     background-image: url(../img/istockphoto-1245297617-612x612.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: fixed;
+     background-clip: border-box;
+     width: 100%;
+     aspect-ratio: 3/1;
+     margin-left: 0;
+     margin-right: 0;
+     z-index: -1;
+     margin-top: 1%;
+     padding-top: 3%;
+     font-weight: bolder;
+     font-family: cursive;
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     padding-left: 8%;
+     padding-right: 20%;
+     padding-bottom: 5%;
+ }
+
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 16px;
+     border: 1px solid #000000;
+     border-radius: 10px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+     background-color: #ffffff;
+     z-index: 1;
+     perspective: 2000px;
+     color: #ea5018;
+     font-size: larger;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     backdrop-filter: blur(90px);
+ }
+
+ input[type=submit] {
+     background-color: #ea5018;
+     color: rgb(255, 255, 255);
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     width: 250px;
+     aspect-ratio: 1/.2;
+     font-weight: bolder;
+     font-family: cursive;
+ }
+
+ input[type=submit]:hover {
+     background-color: #121312;
+
+ }
+
+ /*------------.site-footer-------------*/
+
+ .footer {
+     background-color: #3e3c3c;
+     padding: 20px 0 10px;
+     backdrop-filter: blur(9px);
+     line-height: 24px;
+     color: #ffffff;
+     margin-right: 0;
+     margin-left: 0;
+     font-family: sans-serif;
+     text-align: center;
+     font-weight: bold;
+     margin-top: 0;
+     font-size: 1.1em;
+     margin-bottom: 0;
+
+ }
+
+ .footer h3 {
+     color: #eb6a32;
+     text-align: center;
+     backdrop-filter: blur(9px);
+ }
+
+ .footer p {
+     color: #ffffff;
+     padding-left: 1%;
+     padding-right: 1%;
+     transform: translatey(70px);
+     -webkit-transform: translatey(70px);
+     -moz-transform: translatey(70px);
+     -ms-transform: translatey(70px);
+     -o-transform: translatey(70px);
+     transition: all 2s linear;
+     -webkit-transition: all 2s linear;
+     -moz-transition: all 2s linear;
+     -ms-transition: all 2s linear;
+     -o-transition: all 2s linear;
+     opacity: 0;
+ }
+
+ .footer.show p {
+     opacity: 1;
+     transform: unset;
+     -webkit-transform: unset;
+     -moz-transform: unset;
+     -ms-transform: unset;
+     -o-transform: unset;
+ }
+
+ footer {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     place-items: center;
+     justify-content: center;
+     background-color: #3e3c3c;
+     color: #ffffff;
+     margin-bottom: 0;
+     align-items: center;
+
+ }
+
+ .show {
+     opacity: 1;
+     transform: unset;
+     -webkit-transform: unset;
+     -moz-transform: unset;
+     -ms-transform: unset;
+     -o-transform: unset;
+ }
+
+
+ .d-flex {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+
+ }
+
+ .social-icons {
+     margin-top: -100px;
+ }
+
+ footer h3 {
+
+     color: #ea5018;
+ }
+
+ footer ul li {
+     list-style: none;
+     color: #ffffff;
+     text-align: center;
+     padding-bottom: 5%;
+ }
+
+ footer ul li a {
+     list-style: none;
+     color: #ffffff;
+     padding-bottom: 10%;
+     text-decoration: none;
+     font-weight: bold;
+     text-align: center;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .copyright-text {
+     margin-top: 0;
+     margin-right: 0;
+     margin-left: 0;
+     padding-top: 3%;
+     padding-bottom: 4%;
+     background-color: #eb6a32;
+     text-align: center;
+     font-weight: bolder;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: x-large;
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 500px) {
+
+     footer {
+         display: grid;
+         grid-template-columns: 1fr;
+         row-gap: 1%;
+         background-color: #3e3c3c;
+         color: #ffffff;
+         margin-bottom: 0;
+         align-items: center;
+         place-items: center;
+     }
+
+     .d-flex {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+
+     }
+
+     .social-icons {
+         margin-top: 1%;
+         text-align: center;
+     }
+
+     footer h3 {
+         text-align: center;
+         color: #ea5018;
+     }
+
+     .copyright-text {
+         margin-top: 0;
+         margin-right: 0;
+         margin-left: 0;
+         padding-top: 3%;
+         padding-bottom: 4%;
+         background-color: #eb6a32;
+         text-align: center;
+         font-weight: bolder;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-size: large;
+     }
+ }
+
+ .sticky {
+     background-color: #f17d43;
+     border: none;
+     color: #ffffff;
+ }
+
+ .sticky a {
+
+     color: #ffffff;
+ }
+
+ .sticky .fa-globe {
+
+     color: #ffffff;
+ }
+
+ .sticky text {
+
+     color: #ffffff;
+ }
+
+
+ .show {
+     opacity: 1;
+     transform: unset;
+     -webkit-transform: unset;
+     -moz-transform: unset;
+     -ms-transform: unset;
+     -o-transform: unset;
+ }
